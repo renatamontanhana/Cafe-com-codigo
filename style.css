@@ -1,228 +1,240 @@
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --fonte-principal: 'Montserrat';
-    --botao-cafe:#4d2f1e;
-    --preto-sujo:#131313;
-    --amarelin-cafe: #efefc8;
-    --fundo: #ffffe9;
-    --containerSize: auto; 
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --fonte-principal: "Montserrat";
+  --botao-cafe: #4d2f1e;
+  --preto-sujo: #131313;
+  --amarelin-cafe: #efefc8;
+  --fundo: #ffffe9;
+  --containerSize: auto;
 }
 
 body {
-    background-color: var(--fundo);
-    font-family: var(--fonte-principal);
-    height: 100%;
-    margin:0;
+  background-color: var(--fundo);
+  font-family: var(--fonte-principal);
+  height: 100%;
+  margin: 0;
 }
-.bg{
-    background-image: url(img/cafe.jpg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
-    
+.bg {
+  background-image: url(img/cafe.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-	position: absolute;
-	top: 110px;
-	right: 80px;
+  position: absolute;
+  top: 110px;
+  right: 80px;
 }
 
 nav li {
-	display: inline;
-	margin: 20px 20px 20px 20px;
+  display: inline;
+  margin: 20px 20px 20px 20px;
 }
 
 nav a {
-	text-transform: uppercase;
-	color: var(--amarelin-cafe);
-	font-weight:normal;
-	font-size: 16px;
-	text-decoration: none;
-    font-family: var(--fonte-principal);
+  text-transform: uppercase;
+  color: var(--amarelin-cafe);
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
 }
 
 nav a:hover {
-	color: #fafbf5;
-	text-decoration: underline;
-    font-family: var(--fonte-principal);
+  color: #fafbf5;
+  text-decoration: underline;
+  font-family: var(--fonte-principal);
 }
 
 ul#nav {
-    width: 324px;
-    height: 35px;
-    padding-right: 1px;
-    list-style-type: none;
-    float: right;
+  width: 324px;
+  height: 35px;
+  padding-right: 1px;
+  list-style-type: none;
+  float: right;
 }
 
 ul#nav li {
-    display: inline;
+  display: inline;
 }
 
 ul#nav li a {
-    width: 98px;
-    height: 35px;
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    text-indent: -5000px;
-    overflow: hidden;
+  width: 98px;
+  height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  text-indent: -5000px;
+  overflow: hidden;
 }
 
-ul#nav li#home a { background-position: 0px 5px; }
-ul#nav li#sobre a { background-position: -99px 5px; }
-ul#nav li#contato a { background-position: -198px 5px; }
+ul#nav li#home a {
+  background-position: 0px 5px;
+}
+ul#nav li#sobre a {
+  background-position: -99px 5px;
+}
+ul#nav li#contato a {
+  background-position: -198px 5px;
+}
 
-ul#nav li#home a:hover { background-position: 0px 0px; }
-ul#nav li#sobre a:hover { background-position: -99px 0px; }
-ul#nav li#contato a:hover { background-position: -198px 0px; }
+ul#nav li#home a:hover {
+  background-position: 0px 0px;
+}
+ul#nav li#sobre a:hover {
+  background-position: -99px 0px;
+}
+ul#nav li#contato a:hover {
+  background-position: -198px 0px;
+}
 
 .titulo_1 {
-    position: absolute;
-    top: 120px;
-    font-family: var(--fonte-principal);
-    font-weight: 100; 
-    font-size: 28px;
-    letter-spacing: 8px;
-    color: var(--amarelin-cafe);
-    margin-bottom: 0.2em;
-    text-align: left;
-    margin-left: 50px;
-    padding-bottom: 16px;
-    padding: 10px;
-  }
+  position: absolute;
+  top: 91px;
+  font-family: var(--fonte-principal);
+  font-weight: 100;
+  font-size: 25px;
+  letter-spacing: 8px;
+  color: var(--amarelin-cafe);
+  margin-bottom: 0.2em;
+  text-align: left;
+  margin-left: 50px;
+  padding-bottom: 16px;
+  padding: 10px;
+}
 
 .titulo__container2 {
-    font-weight: 100;
-    font-size: 22px;
-    font-family: var(--fonte-principal);
-    color: var(--preto-sujo);
-    margin-bottom: 50px;
-    text-align: center;
-    padding-bottom: 30px;
-    letter-spacing: 8px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: var(--fonte-principal);
+  color: var(--preto-sujo);
+  margin-bottom: 50px;
+  text-align: center;
+  padding-bottom: 30px;
+  letter-spacing: 8px;
 }
 
 .titulo__container3 {
-    font-weight: 100;
-    font-size: 16px;
-    font-family: var(--fonte-principal);
-    color: var(--botao-cafe);
-    margin-bottom: 3em;
-    text-align: center;
-    letter-spacing: 8px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: var(--fonte-principal);
+  color: var(--botao-cafe);
+  margin-bottom: 3em;
+  text-align: center;
+  letter-spacing: 6px;
 }
 .container__colunas {
-    font-weight: 300;
-    font-size: 12px;
-    font-family: var(--fonte-principal);
-    color: var(--botao-cafe);
-    text-align: center;
-    padding-bottom: 22px;
+  font-weight: 300;
+  font-size: 12px;
+  font-family: var(--fonte-principal);
+  color: var(--botao-cafe);
+  text-align: center;
+  padding-bottom: 22px;
 }
-.lista__item{
-    font-weight: 300;
-    font-size: 16px;
-    font-family: var(--fonte-principal);
-    color: var(--botao-cafe);
-    text-align: center;
-    padding: 20px;
-    line-height: 10px;
-    padding-bottom: 12px;
-    margin:10px;
+.lista__item {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+  color: var(--botao-cafe);
+  text-align: center;
+  padding: 20px;
+  line-height: 10px;
+  padding-bottom: 12px;
+  margin: 10px;
 }
 .coluna__lista {
-    background-size: 40%;
-    display: flex;
-    list-style-type: none;
-    padding-right: 14px;
-    justify-content: center;
-    max-width: 100%;
-    padding-bottom: 22px;
-    max-width: 700px;
-	margin: 0 auto;
-    
-    }
-    .img{
-        -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-		-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
-		box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
-    
+  background-size: 40%;
+  display: flex;
+  list-style-type: none;
+  padding-right: 14px;
+  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 22px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.img {
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
 
-    }
-
-.texto{
-    font-weight: 300;
-    font-size: 14px;
-    font-family: var(--fonte-principal);
-    color: var(--botao-cafe);
-    text-align: center;
-    padding: 10px;
-    line-height: 20px;
-    padding-bottom: 12px;
-
+.texto {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: var(--fonte-principal);
+  color: var(--botao-cafe);
+  text-align: center;
+  padding: 10px;
+  line-height: 20px;
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-		width: auto;
-	}
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-conteudo,
+  .video {
+    width: auto;
+  }
 
-	h1 {
-		text-align: center;
-	}
+  h1 {
+    text-align: center;
+  }
 
-	nav {
-		position: static;
-	}
+  nav {
+    position: static;
+  }
 
-	.lista-beneficios, .imagem-beneficios {
-		width: 100%;
-	}
+  .lista-beneficios,
+  .imagem-beneficios {
+    width: 100%;
+  }
 }
 
 .colchete {
-    font-weight: lighter;
-    font-size: 30px;
-    font-family: var(--fonte-principal);
-    color: var(--branco-principal);
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: var(--fonte-principal);
+  color: var(--branco-principal);
 }
 
 .copyright {
-	color: var(--botao-cafe);
-	font-size: 13px;
-    font-family: var(--fonte-principal);
-	margin: 20px 0 0;
+  color: var(--botao-cafe);
+  font-size: 13px;
+  font-family: var(--fonte-principal);
+  margin: 20px 0 0;
 }
 
 footer {
-	text-align: center;
-    font-family: var(--fonte-principal);
+  text-align: center;
+  font-family: var(--fonte-principal);
 }
-body, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .bg {
-    /* The image used */
-    background-image: url("img/cafe.jpg");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img/cafe.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
