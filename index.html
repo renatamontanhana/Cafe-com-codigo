@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Café com código</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Café com código</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">    
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <div class="bg"  hspace="50">
-  </div>
- <h1 class="titulo_1"><span class="colchete">[</span>Café com código<span class="colchete">]</span></h1>
-
-  <nav>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars" style="font-size: 24px"></i>
+      </label>
+      <label class="titulo_1">
+        <span class="colchete">[</span>Café com código<span class="colchete"
+          >]</span
+        >
+      </label>
       <ul>
-        <li><a href="cafe.html">Tipos de café</a></li>
+        <li><a class="active" href="cafe.html">Tipos de café</a></li>
         <li><a href="produtos.html">Lojinha para se deliciar</a></li>
         <li><a href="faleconosco.html">Fale conosco</a></li>
       </ul>
     </nav>
- 
-<div class="titulo__container2">
-<h1>[Conheça essa nova experiência]</h1>
-</div>
-<div class="titulo__container3">
-  <h1>[Nossos Serviços]</h1>
-  </div>
-   
-  <div class="container__colunas">
-    <ul class="coluna__lista">
+    <section></section>
+
+    <div class="bg" hspace="50"></div>
+    <div class="titulo__container2">
+      <h1>[Conheça essa nova experiência]</h1>
+    </div>
+    <div class="titulo__container3">
+      <h1>[Nossos Serviços]</h1>
+    </div>
+
+    <div class="container__colunas">
+      <ul class="coluna__lista">
         <li>
           <div class="img">
-        <img src="img/webdesign.png" alt="icone de webdesign" height="70" width="70"></div>
-        <h3 class="lista__item">Web Design</h3>
-            <p class="texto">Lorem ipsum dolor</p>
-            <p>Ut enim ad minim veniam, quis nostrud.</p>
-        </li>
-        <li>
-          <img src="img/printdesign.png" alt="icone de design grafico" height="70" width="70">
-          <h3 class="lista__item">Design Gráfico</h3>
-          <p class="texto">Lorem ipsum dolor </p>
+            <img
+              src="img/webdesign.png"
+              alt="icone de webdesign"
+              height="70"
+              width="70"
+            />
+          </div>
+          <h3 class="lista__item">Web Design</h3>
+          <p class="texto">Lorem ipsum dolor</p>
           <p>Ut enim ad minim veniam, quis nostrud.</p>
         </li>
         <li>
-          <img src="img/code.png" alt="icone de codigo" height="70" width="70">
+          <div class="img">
+            <img
+              src="img/printdesign.png"
+              alt="icone de design grafico"
+              height="70"
+              width="70"
+            />
+          </div>
+          <h3 class="lista__item">Design Gráfico</h3>
+          <p class="texto">Lorem ipsum dolor</p>
+          <p>Ut enim ad minim veniam, quis nostrud.</p>
+        </li>
+        <li>
+          <div class="img">
+            <img
+              src="img/code.png"
+              alt="icone de codigo"
+              height="70"
+              width="70"
+            />
+          </div>
           <h3 class="lista__item">Programação</h3>
           <p class="texto">Lorem ipsum dolor.</p>
           <p>Ut enim ad minim veniam, quis nostrud.</p>
         </li>
-  </ul>
-  </div>
+      </ul>
+    </div>
 
-   
-  <footer>
-   <p class="copyright"> Copyright Renata Montanhana - 2022 </p>
-  </footer>
-  
-</body>
+    <footer>
+      <p class="copyright">Copyright Renata Montanhana - 2022</p>
+    </footer>
+  </body>
 </html>

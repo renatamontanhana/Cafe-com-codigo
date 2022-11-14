@@ -9,15 +9,16 @@
   --containerSize: auto;
 }
 
-body {
-  background-color: var(--fundo);
+body,
+html {
+  background: linear-gradient(90deg, #efeab3 0%, #efcf00 100%);
   font-family: var(--fonte-principal);
   height: 100%;
   margin: 0;
 }
 .bg {
   background-image: url(img/cafe.jpg);
-  height: 100%;
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,76 +31,14 @@ body {
 }
 
 nav {
+  background: var(--botao-cafe);
+  height: 80px;
+  width: 100%;
+}
+
+label.titulo_1 {
   position: absolute;
-  top: 110px;
-  right: 80px;
-}
-
-nav li {
-  display: inline;
-  margin: 20px 20px 20px 20px;
-}
-
-nav a {
-  text-transform: uppercase;
-  color: var(--amarelin-cafe);
-  font-weight: normal;
-  font-size: 16px;
-  text-decoration: none;
-  font-family: var(--fonte-principal);
-}
-
-nav a:hover {
-  color: #fafbf5;
-  text-decoration: underline;
-  font-family: var(--fonte-principal);
-}
-
-ul#nav {
-  width: 324px;
-  height: 35px;
-  padding-right: 1px;
-  list-style-type: none;
-  float: right;
-}
-
-ul#nav li {
-  display: inline;
-}
-
-ul#nav li a {
-  width: 98px;
-  height: 35px;
-  margin-left: 5px;
-  margin-right: 5px;
-  float: left;
-  text-indent: -5000px;
-  overflow: hidden;
-}
-
-ul#nav li#home a {
-  background-position: 0px 5px;
-}
-ul#nav li#sobre a {
-  background-position: -99px 5px;
-}
-ul#nav li#contato a {
-  background-position: -198px 5px;
-}
-
-ul#nav li#home a:hover {
-  background-position: 0px 0px;
-}
-ul#nav li#sobre a:hover {
-  background-position: -99px 0px;
-}
-ul#nav li#contato a:hover {
-  background-position: -198px 0px;
-}
-
-.titulo_1 {
-  position: absolute;
-  top: 91px;
+  top: 51px;
   font-family: var(--fonte-principal);
   font-weight: 100;
   font-size: 25px;
@@ -108,8 +47,93 @@ ul#nav li#contato a:hover {
   margin-bottom: 0.2em;
   text-align: left;
   margin-left: 50px;
-  padding-bottom: 16px;
-  padding: 10px;
+  padding: 0 100px;
+  display: inline;
+  margin: 10px 10px 10px 10px;
+  line-height: 80px;
+}
+nav ul {
+  float: right;
+  margin: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: var(--amarelin-cafe);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  background: var(--cinza-secundario);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: var(--amarelin-cafe);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--botao-cafe);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #efefc8;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+  section {
+    background: url(img/cafe.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  .bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .titulo__container2 {
@@ -124,8 +148,8 @@ ul#nav li#contato a:hover {
 }
 
 .titulo__container3 {
-  font-weight: 100;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 14px;
   font-family: var(--fonte-principal);
   color: var(--botao-cafe);
   margin-bottom: 3em;
@@ -150,6 +174,7 @@ ul#nav li#contato a:hover {
   line-height: 10px;
   padding-bottom: 12px;
   margin: 10px;
+  font-weight: bold;
 }
 .coluna__lista {
   background-size: 40%;
@@ -161,11 +186,6 @@ ul#nav li#contato a:hover {
   padding-bottom: 22px;
   max-width: 700px;
   margin: 0 auto;
-}
-.img {
-  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 }
 
 .texto {
@@ -179,29 +199,6 @@ ul#nav li#contato a:hover {
   padding-bottom: 12px;
 }
 
-@media screen and (max-width: 480px) {
-  .caixa,
-  .principal,
-  .conteudo-beneficios,
-  .mapa-conteudo,
-  .video {
-    width: auto;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  nav {
-    position: static;
-  }
-
-  .lista-beneficios,
-  .imagem-beneficios {
-    width: 100%;
-  }
-}
-
 .colchete {
   font-weight: lighter;
   font-size: 30px;
@@ -209,21 +206,13 @@ ul#nav li#contato a:hover {
   color: var(--branco-principal);
 }
 
-.copyright {
-  color: var(--botao-cafe);
-  font-size: 13px;
-  font-family: var(--fonte-principal);
-  margin: 20px 0 0;
+.img {
+  filter: drop-shadow(8px 8px 4px #575757);
 }
-
-footer {
+.copyright {
   text-align: center;
   font-family: var(--fonte-principal);
-}
-body,
-html {
-  height: 100%;
-  margin: 0;
+  font-size: 12px;
 }
 
 .bg {

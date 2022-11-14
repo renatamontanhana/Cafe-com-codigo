@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>carousel</title>
-        <link rel="stylesheet" href="stylecafe.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">    
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     </head>
-     <header>
-     <nav>
+  <head>
+    <meta charset="utf-8" />
+    <title>carousel</title>
+    <link rel="stylesheet" href="stylecafe.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  </head>
+  <header>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="produtos.html">Lojinha para se deliciar</a></li>
@@ -21,37 +28,97 @@
       </ul>
     </nav>
   </header>
-<body>
+  <body>
     <div class="wrapper">
-        <div class="carousel owl-carousel">
-            <div class="card card-1"> <img src="img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt="tipos de café" width="420px" height="280px"></div>
-            <div class="card card-2"> <img src="img/alisa-anton-FbRGK2rZs8g-unsplash.jpg" alt="xícara de café, croissant e jornal" width="420px" height="280px"></div>
-            <div class="card card-3"><img src="img/rizky-subagja-1k7TnX5GAww-unsplash.jpg" alt="Cafeteria" width="420px" height="280px"></div>
-            <div class="card card-4"><img src="img/kevin-schmid-ftA71vetxuo-unsplash.jpg" alt="tirando café da máquina" width="420px" height="280px"></div>
-            <div class="card card-5"><img src="img/brooke-cagle-X4RJG4aNi8o-unsplash.jpg" alt="barista com xícara de café" width="420px" height="280px"></div>   
-            </div>
-        <script>
-         $(".carousel").owlCarousel({
-           margin: 20,
-           loop: true,
-           autoplay: true,
-           autoplayTimeout: 2000,
-           autoplayHoverPause: true,
-           responsive: {
-             0:{
-               items:1,
-               nav: false
-             },
-             600:{
-               items:2,
-               nav: false
-             },
-             1000:{
-               items:3,
-               nav: false
-             }
-           }
-         });
+      <div class="carousel owl-carousel">
+        <div class="card card-1">
+          <img
+            src="img/tyler-nix-3uSHEffsDXI-unsplash.jpg"
+            alt="xícara de café"
+            width="420px"
+            height="280px"
+          />
+        </div>
+        <div class="card card-2">
+          <img
+            src="img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg"
+            alt="tipos de café, croissant e jornal"
+            width="420px"
+            height="280px"
+          />
+        </div>
+        <div class="card card-3">
+          <img
+            src="img/nafinia-putra-Kwdp-0pok-I-unsplash.jpg"
+            alt="Cafeteria"
+            width="420px"
+            height="280px"
+          />
+        </div>
+        <div class="card card-4">
+          <img
+            src="img/nathan-dumlao-c2Y16tC3yO8-unsplash.jpg"
+            alt=" café da máquina"
+            width="420px"
+            height="280px"
+          />
+        </div>
+        <div class="card card-5">
+          <img
+            src="img/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
+            alt="amigos tomando café"
+            width="420px"
+            height="280px"
+          />
+        </div>
+      </div>
+      <script>
+        $(".carousel").owlCarousel({
+          margin: 20,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 3,
+              nav: false,
+            },
+          },
+        });
       </script>
-   </body>
+      <div class="descricao">
+        <p>
+          Café com código nada mais é que o portfólio da Renata Montanhana, Dev
+          Front End. Tenho grande experiência em atender clientes e lidar com
+          pessoas.
+        </p>
+
+        <p>
+          Migrei para a área de tecnologia e trago toda a bagagem das medicinas
+          orientais e observação do comportamento humano para solucionar
+          problemas, aliado à experiência do Covid-19, que aprendi a lidar e
+          desenvolver respostas rápidas em situações de crise.
+        </p>
+        <p>Eterna estudante, todos os dias praticando algo novo.</p>
+        <p>As ferramentas que mais utilizo:</p>
+        <ul class="lista">
+          <li>HTML;</li>
+          <li>CSS;</li>
+          <li>Javascript;</li>
+          <li>Git/Github;</li>
+          <li>Figma.</li>
+          <li><a href="https://github.com/renatamontanhana">Github</a></li>
+        </ul>
+      </div>
+       
+    </body>
 </html>
